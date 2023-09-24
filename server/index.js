@@ -1,6 +1,8 @@
 const { Server } = require('socket.io')
 
-const io = new Server(8000, {
+const serverURL = 'https://convo-hire-4acyeds53-sarthakooo7dev.vercel.app/'
+
+const io = new Server(serverURL, {
   cors: true,
 })
 
