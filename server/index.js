@@ -3,7 +3,11 @@ const { Server } = require('socket.io')
 const serverURL = 'https://convo-hire-4acyeds53-sarthakooo7dev.vercel.app/'
 
 const io = new Server(serverURL, {
-  cors: true,
+  cors: {
+    origin: 'https://convo-hire-jgfx.vercel.app', // Adjust the origin to match your client's URL
+    methods: ['GET', 'POST'], // Specify the allowed HTTP methods
+    credentials: true, // Allow cookies or credentials to be sent
+  },
 })
 
 // ////
