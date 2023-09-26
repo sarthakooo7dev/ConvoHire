@@ -10,7 +10,7 @@ export const useSocket = () => {
 
 export const SocketProvider = (props) => {
   const socket = useMemo(
-    () => io('https://convo-hire-4acyeds53-sarthakooo7dev.vercel.app'),
+    () => io('https://cnvhire-webrtc.onrender.com'),
     [],
   )
 
