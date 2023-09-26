@@ -1,20 +1,14 @@
+const { createServer } = require('http')
 const { Server } = require('socket.io')
 
-const serverURL = 'https://cnvhire-webrtc-8noj.onrender.com'
-
-const io = new Server(serverURL, {
-  cors: {
-    origin: 'https://cnvhire-webrtc-8noj.onrender.com', // Adjust the origin to match your client's URL
-    methods: ['GET', 'POST'], // Specify the allowed HTTP methods
-    credentials: true, // Allow cookies or credentials to be sent
-  },
+//const serverURL = 'https://cnvhire-webrtc-8noj.onrender.com'
+const httpServer = createServer()
+const io = new Server(httpServer, {
+  cors: true,
 })
-
+const port = process.env.PORT || 8000
 // ////
-// const ipAddress = '192.168.1.4'
-
-// const PORT = 8000
-// io.listen(PORT, { host: ipAddress })
+httpServer.listen(8000)
 
 // /////
 const socketToEmailMap = new Map()
