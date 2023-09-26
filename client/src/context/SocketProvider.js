@@ -10,7 +10,7 @@ export const useSocket = () => {
 
 export const SocketProvider = (props) => {
   const socket = useMemo(
-    () => io('https://cnvhire-webrtc.onrender.com'),
+    () => io('https://cnvhire-webrtc-8noj.onrender.com'),
     [],
   )
 
