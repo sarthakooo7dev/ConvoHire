@@ -153,6 +153,14 @@ color: rgb(247, 126, 86);
   letter-spacing: 1px;
 }
 
+.btn_container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+
 .btn-login{
   background-color:rgb(228, 102, 60);;
   color: whitesmoke;
@@ -199,4 +207,382 @@ color: rgb(247, 126, 86);
 .container-text {
   font-size: 16px;
 }
+.btn_container{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+}
+
+
+.main-home{
+
+  display: flex;
+  overflow: hidden;
+  
+}
+.home_sec{
+  height: 100vh;
+  width: 100vw;
+}
+.home_btn{
+  padding: 2rem;
+  border: 2px solid blue;
+}
+.req{
+  color: red;
+}
+
+.main_grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+min-height: 87vh;
+
+}
+
+.item{
+  /* border: 2px blue solid; */
+}
+
+
+
+.main_content_left{
+  padding: 2rem;
+}
+
+.btns_hm_fnc{
+  display: flex;
+  
+}
+
+.btns_hm_fnc > div{
+  border: none;
+  padding: 1rem;
+ 
+  color: whitesmoke;
+  width: 8rem;
+  height: 7.5rem;
+  margin-right: 1rem;
+  border-radius: 17%;
+}
+
+.btn_bg{
+background-color: rgb(255, 116, 46);
+}
+.btn_bg2 {
+  background-color: rgb(14, 120, 249);
+}
+
+.btn_cont{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.info1{
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(255, 237, 228);
+  
+}
+
+.info2{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+
+.info_clr{
+    color: rgb(255, 173, 131);
+}
+.info_clr2 {
+  color: rgb(138, 193, 238);
+}
+.icon_bg{
+background: rgb(248, 166, 111);
+}
+.icon_bg2 {
+  background: rgb(119, 171, 238);
+}
+
+.btn_icon{
+  font-size: 30px;
+ 
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+
+.main_content_right{
+  padding: 1.5rem;
+  border-left: 1px rgb(61, 59, 59) solid;;
+ 
+}
+.home_timer{
+  background-color: rgb(191, 197, 197);
+  color: rgb(173, 189, 212);
+  padding: 1.5rem;
+  border-radius: 13px;
+  line-height: 0;
+  height: 7.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+
+    background-size: 100% auto;
+background-size: cover;
+
+ 
+  /* Make the background image fixed */
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+  background-position: center;
+}
+
+
+@media(max-width:60em) {
+  .main_grid {
+
+   grid-template-columns: none ;
+    grid-template-rows: 1fr 2fr;
+   
+  }
+
+  .item:nth-of-type(2) {
+    order: -1;
+  }
+
+    .main_content_right {
+      border: none;
+    }
+
+  
+
+}
+
+@media(max-width:30em) {
+  .btns_hm_fnc {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+}
+
+
+
+.main_meetingPage{
+
+  /* background-color: rgba(15, 15, 15, 0.3); */
+  
+ 
+
+
+}
+/* .oo{
+  z-index: 2;;
+} */
+.connnect_meeting{
+display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 90vh;
+}
+.info_meeting{
+font-size: medium;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(179, 180, 182);
+}
+.btn_meeting{
+font-size: 17px;
+background-color: transparent;
+color: rgb(199, 230, 230);
+border: 2px rgb(53, 194, 250) solid;
+ 
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main_stream{
+background-color: rgb(32, 33, 36);
+min-height: 99vh;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+
+}
+
+.stream_heading{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(212, 212, 206);
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stream_meeting{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+
+
+}
+
+.stream_email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(162, 168, 168);
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  
+  /* border: 2px rgb(2, 133, 226)solid; */
+}
+.myStream{
+  /* border-radius: 20px; */
+ width: 35%;
+ /* border: 2px rgb(23, 41, 54)solid; */
+  overflow: hidden;
+
+  margin: 1rem;
+
+}
+
+.footer_stream{
+ padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.btn_footer{
+  font-size: 17px;
+  letter-spacing: 0.1rem;
+  background-color: rgb(179, 31, 31);
+  color: rgb(225, 230, 230);
+  border: 2px rgb(63, 29, 29) solid;
+
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media(max-width:60em) {
+
+  .stream_meeting{
+    flex-direction: column;
+  }
+
+    .myStream {
+      width: 80%;
+      margin: 0.6rem;
+    }
+}
+
+@media(max-width:30em) {
+
+  .stream_meeting {
+    flex-direction: column;
+  }
+
+  .myStream {
+    width: 90%;
+    margin: 0.6rem;
+  }
+}
+
+/* _________ loader CSS__________ */
+
+.load_meeting{
+  margin-top: 5rem;
+  font-family: sans-serif;
+  color: rgb(169, 173, 172);
+}
+
+.loader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner {
+  
+  --size: 30px;
+  --first-block-clr: #50a0f7;
+  --second-block-clr: #f5985a;
+  --clr: #111;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.spinner::after,
+.spinner::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  top: 50%;
+  animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+  left: 50%;
+  background: var(--first-block-clr);
+}
+
+.spinner::after {
+  background: var(--second-block-clr);
+  top: calc(50% - var(--size));
+  left: calc(50% - var(--size));
+  animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+}
+
+@keyframes down {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  25% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes up {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-100%) translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(-100%);
+  }
 }

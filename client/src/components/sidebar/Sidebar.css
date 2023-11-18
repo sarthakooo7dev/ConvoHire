@@ -1,0 +1,67 @@
+.main-sidebar{
+display: flex;
+flex-direction: column;
+padding: 0.7rem;
+padding-top: 1.5rem;
+max-width:5rem;
+border-right: 1px rgb(61, 59, 59) solid;
+
+}
+
+.icon{
+    padding: 0.2rem;
+    margin-top: -0.4rem;
+    margin-bottom: 1.7rem;
+    border: 2px rgb(6, 72, 110) solid;
+    border-radius: 20%;
+    height: 2.4rem;
+    background-color: rgb(4, 33, 75);
+    box-shadow: rgba(58, 64, 66, 0.35) 0px 5px 15px;
+
+    cursor: pointer;
+}
+.icon > img{
+    width: 2.5rem;
+    height: 2.3rem;
+    
+}
+
+
+.elments{
+    padding-top: 2rem;
+}
+
+.elm{
+
+border: 2px rgb(29, 29, 46) solid;
+   padding: 0.7rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    
+}
+
+.inactive{
+color: rgb(125, 126, 128);
+}
+.active{
+    color: aliceblue;
+    border-bottom: 2px white solid;
+}
+
+.elm:hover{
+    border: 2px rgb(50, 50, 51) solid;
+        border-radius: 20%;
+        background-color: rgb(36, 39, 56);
+        color: aliceblue;
+}
+
+@media(max-width:60em) {
+
+    .main-sidebar {
+        /* border: 2px solid greenyellow; */
+        /* min-height: 100vh; */
+    }
+}

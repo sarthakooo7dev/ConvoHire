@@ -1,0 +1,25 @@
+.main_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0.7rem 2rem 0.5rem 2rem; 
+border-bottom: 1px rgb(61, 59, 59) solid;
+}
+
+/* .bg_r{
+    border:2px solid red
+} */
+
+.header_text{
+    font-family :'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(209, 212, 214);
+}
+
+.header_img > img{
+border: 3px rgb(107, 173, 235) solid;
+border-radius: 50%;
+width: 2.7rem;
+height: 2.6rem;
+}
