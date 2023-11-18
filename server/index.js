@@ -7,9 +7,9 @@ const io = new Server(8080, {
   cors: true,
 })
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8080
 // ////
-httpServer.listen(8000)
+httpServer.listen(8080)
 
 // /////
 const socketToEmailMap = new Map()
