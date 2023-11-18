@@ -3,13 +3,13 @@ const { Server } = require('socket.io')
 
 //const serverURL = 'https://cnvhire-webrtc-8noj.onrender.com'
 const httpServer = createServer()
-const io = new Server(8080, {
+const io = new Server(httpServer, {
   cors: true,
 })
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8000
 // ////
-httpServer.listen(8080)
+httpServer.listen(8000)
 
 // /////
 const socketToEmailMap = new Map()
